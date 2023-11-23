@@ -1,13 +1,3 @@
-/* 
-   Whenever a DOM state change occurs (innerHTML, innerText, etc.) is updated
-   we need to look for any new tags that need to be bound to a function. We
-   assume  jQuery is available.
-
-   We search tags for bluejs attribute bluejs="binding" and bluejs-trigger="event"
-   the name tag supplies the context for the trigger endpoints.
-*/
-
-
 class BlueJS{
     constructor(){
         this._tags = new Map();
