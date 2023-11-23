@@ -15,6 +15,14 @@ class BlueJS{
         this._mutation = new MutationObserver(this.observe);
     }
 
+    API(){
+        var arr = [];
+        this._tagBindings.forEach((value, key)=>{
+            arr.push(key)
+        })
+        return arr;
+    }
+
     addBinding(name, context,handler){
         var blueBinding = new Binding(context, handler);
         this._tagBindings.set(name, blueBinding);
@@ -108,4 +116,6 @@ class TagElement{
 
 const bluejs = new BlueJS();
 
-document.addEventListener("DOMContentLoaded", function(){bluejs.initiate())
+document.addEventListener("DOMContentLoaded", function(){
+    bluejs.initiate();
+});
