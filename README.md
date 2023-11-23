@@ -23,12 +23,6 @@ BlueJs is meant to be a simple library for managing dynamically loaded content a
 
 # Usage
 
-Load in the bluejs file into your application
-
-```
-<script src="https://github.com/andewx/bluejs/blue.js.min" crossorigin="anonymous"></script
-```
-
 Define event handlers `function myHandler(e){e.preventDefault()}` and pass to `bluejs` when initializing your application with `bluejs.addBinding(name,handler)`
 
 Bind the event handlers to dynamically imported elements by including the `bluejs` attributes. 
