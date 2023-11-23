@@ -8,3 +8,15 @@ BlueJS offers a simple way to manage and attach DOM events to HTML elements for 
 
 `<li bluejs="unique-tag" bluejs-trigger="click" bluejs-binding="myHandler"> Item1 </li>`
 
+This let's us easily address registered handlers for dynamically loaded content and let's us seperate presentation concerns and backend state. Additionally we make the active tag and context available to the handlers in the global state for adding context.
+
+# Handlers
+
+We map handlers through `bluejs.addBinding(name, handler)` so keep in mind that you will effectively be developing a handlers key based API. Calling `bluejs.API()` presents a dictionary of keys and handler descriptions to your application
+
+# Initialization
+
+bluejs should have the handlers added prior to usage. Once the document loads bluejs will register the current DOM and then listen for any changes on the DOM. If you need to improve performance you can have bluejs listen to a subtree tag item on the DOM.
+
+BlueJs is meant to be a simple library for managing dynamically loaded content and allows users to implement their own custom handlers, this lets us write and control our async operations with  any fidelity we need without further abstraction or need for extensions. For example we can plug in any sort of request mechanism over any protocol as long as the behavior is captured by our handlers.
+
