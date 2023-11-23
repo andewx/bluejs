@@ -20,3 +20,22 @@ bluejs should have the handlers added prior to usage. Once the document loads bl
 
 BlueJs is meant to be a simple library for managing dynamically loaded content and allows users to implement their own custom handlers, this lets us write and control our async operations with  any fidelity we need without further abstraction or need for extensions. For example we can plug in any sort of request mechanism over any protocol as long as the behavior is captured by our handlers.
 
+
+# Usage
+
+Load in the bluejs file into your application
+
+```
+<script src="https://github.com/andewx/bluejs/blue.js.min" crossorigin="anonymous"></script
+```
+
+Define event handlers `function myHandler(e){e.preventDefault()}` and pass to `bluejs` when initializing your application with `bluejs.addBinding(name,handler)`
+
+Bind the event handlers to dynamically imported elements by including the `bluejs` attributes. 
+
+`<li bluejs="unique-tag" bluejs-trigger="click" bluejs-binding="myHandler"> Item1 </li>`
+
+# Feature Requests
+
+This is just a port of a simple event handler library feel free to modify and extend as needed. Not actively maintained.
+
