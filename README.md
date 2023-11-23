@@ -9,7 +9,7 @@ BlueJS offers a simple way to manage and attach DOM events to HTML elements for 
 
 `<li bluejs="unique-tag" bluejs-trigger="click" bluejs-binding="myHandler"> Item1 </li>`
 
-This let's us easily address registered handlers for dynamically loaded content and let's us seperate presentation concerns and backend state. Additionally we make the active tag and context available to the handlers in the global state for adding context.
+This let's us easily address registered handlers for dynamically loaded content and let's us seperate presentation concerns and backend state. Keep in mind that this is a simple tool Library rather than a full framework, additional features may be added but none are planned..
 
 # Handlers
 
