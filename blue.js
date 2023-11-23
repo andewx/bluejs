@@ -107,3 +107,5 @@ class TagElement{
 }
 
 const bluejs = new BlueJS();
+
+document.addEventListener("DOMContentLoaded", function(){bluejs.initiate())
