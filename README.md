@@ -1,7 +1,7 @@
 # bluejs
 Javascript Events &amp; Sessions Library for Frontend Framework/Application Development
 
-![bluejs](bluejs.png)
+![bluejs](bluejs@0.5x.png)
 
 # Overview
 
